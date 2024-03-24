@@ -2,9 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import style from './styles.module.scss';
 import { Button } from 'antd';
+import Sliders from './sliders';
 
 const NasılBaslanır = () => {
   return (
+   <>
     <div className={style.nasılBaslanır}>
       <h2>Nasıl Başlanır</h2>
       <div className={style.all_cards}>
@@ -63,6 +65,8 @@ const NasılBaslanır = () => {
       </div>
 
     </div>
+    <Sliders/>
+   </>
   )
 }
 

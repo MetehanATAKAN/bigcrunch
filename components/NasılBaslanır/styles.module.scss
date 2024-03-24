@@ -2,6 +2,11 @@ $border-color :#eef1fa;
 $text-3-color: #70798c;
 $brand-1-color : #2354e6;
 $button-text-color: #ffffff;
+$font-subtitle: 20px;
+$card-bg-color: #1d1d24;
+$card-text-color: #eff5ff;
+$border-radius-sm: 4px;
+$text-color: #7e8494;
 
 .nasılBaslanır {
     .all_cards {
@@ -14,14 +19,15 @@ $button-text-color: #ffffff;
             border-radius: 8px;
 
             .card {
-                
-    height: 100%;
-    padding: 24px 12px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 16px;
+
+                height: 100%;
+                padding: 24px 12px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 16px;
+
                 .card_info {
                     .cardHeader {
                         margin-right: 24px;
@@ -53,11 +59,291 @@ $button-text-color: #ffffff;
     }
 }
 
+.sliders {
+    background-color: rgb(9, 9, 11);
+    margin-top: 80px;
+    padding: 40px;
+
+    .body {
+        width: 100%;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding: 48px 0px 40px;
+        flex-flow: column-reverse;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+
+            .left1 {
+                font-size: $font-subtitle;
+                line-height: 1.5;
+                color: $text-3-color;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .left1_text {
+                    display: flex;
+                    align-items: flex-start;
+                    line-height: 1.5;
+                    gap: 4px;
+
+                    p {
+                        word-break: break-word;
+                    }
+                }
+            }
+
+            .left2 {
+                width: 100%;
+                padding: 16px;
+                border-radius: 8px;
+                background-color: $card-bg-color;
+                box-sizing: border-box;
+                margin-top: 24px;
+
+                .left2_header {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $card-text-color;
+                    margin-bottom: 16px;
+                    line-height: normal;
+                }
+
+                .left2_info {
+                    display: flex;
+                    gap: 16px 48px;
+                    flex-wrap: wrap;
+
+                    .infos {
+                        display: flex;
+                        flex-direction: column;
+
+                        .text1 {
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: #30bf87;
+                            line-height: normal;
+                        }
+
+                        .text2 {
+                            font-size: 12px;
+                            color: $text-3-color;
+                            margin-top: 4px;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+
+            .left3 {
+                width: 100%;
+
+                button {
+                    background-color: $brand-1-color;
+                    border: none;
+                    color: $button-text-color;
+                    font-weight: 600;
+                    margin-top: 24px;
+                }
+            }
+        }
+
+        .right {
+            width: 632px;
+            height: 588px;
+            display: flex;
+            -webkit-box-pack: end;
+            justify-content: flex-end;
+
+            .card {
+                .card_header {
+                    position: relative;
+                    width: 100%;
+                    height: 190px;
+                    border-radius: 4px;
+                    overflow: hidden;
+
+                    .time {
+                        width: 100%;
+                        height: 24px;
+                        font-weight: 600;
+                        position: absolute;
+                        left: 0px;
+                        bottom: 0px;
+                        opacity: 0.95;
+                        background: rgb(47, 52, 64);
+                        display: flex;
+                        -webkit-box-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        align-items: center;
+                        color: #30bf87;
+                    }
+                }
+
+                .card_body {
+                    width: 100%;
+                    padding: 16px 8px;
+                    box-sizing: border-box;
+                    background-color: #1d1d24;
+                    border-radius: 10px;
+
+                    .buttons {
+                        display: flex;
+                        margin-bottom: 12px;
+                        font-size: 12px;
+                        color: #fafafa;
+                        font-weight: 500;
+                        gap: 8px;
+
+                        .button {
+                            height: 24px;
+                            line-height: 24px;
+                            background-color: #203588;
+                            border-radius: 2px;
+                            padding: 0px 8px;
+                        }
+                    }
+
+                    .cardName {
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #fafafa;
+                        margin-bottom: 12px;
+                    }
+
+                    .card_info {
+                        width: 100%;
+                        padding: 12px 8px;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+                        background-color: #14141a;
+
+                        .info1 {
+                            display: flex;
+                            font-weight: 600;
+                            margin-bottom: 8px;
+                            align-items: flex-end;
+
+                            .number {
+                                font-size: 28px;
+                                color: #fafafa;
+                            }
+
+                            .text {
+                                font-size: 16px;
+                                color: $text-color;
+                                margin-left: 4px;
+                                margin-right: 0px;
+                                margin-bottom: 3px;
+                            }
+                        }
+
+                        .moneyInfo {
+                            display: flex;
+                            font-size: 16px;
+                            margin-bottom: 4px;
+                            -webkit-box-pack: justify;
+                            justify-content: space-between;
+
+                            .money1 {
+                                display: flex;
+
+                                .m1 {
+                                    color: #fafafa
+                                }
+
+                                .m2 {
+                                    color: $text-color;
+                                }
+                            }
+
+                            .money2 {
+                                color: #198cff;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .sliders {
+        .body {
+            padding: 110px 0px 0px;
+            flex-direction: row;
+
+            .left {
+                width: 256px;
+
+                .left1 {
+                    .left1_text {
+                        gap: 12px;
+                    }
+                }
+
+                .left2 {
+                    margin-top: 32px;
+
+                    .left2_info {
+                        row-gap: 24px;
+                    }
+                }
+
+                .left3 {
+                    width: auto;
+
+                    button {
+                        margin-top: 72px;
+                    }
+                }
+            }
+
+            .right {
+                .card {
+                    .card_header {
+                        border-radius: 8px;
+                        height: 258px;
+
+                        .time {
+                            height: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1248px) {
+    .sliders {
+        .body {
+            .left {
+                width: 464px;
+            }
+        }
+    }
+}
+
+
+
+
 @media screen and (max-width: 992px) {
     .nasılBaslanır {
         h2 {
             font-size: 24px;
         }
+
         .all_cards {
             grid-template-columns: repeat(1, 1fr);
 
@@ -70,6 +356,21 @@ $button-text-color: #ffffff;
                     display: flex;
                     align-items: center;
                 }
+            }
+        }
+    }
+
+    .sliders {
+        margin-top: 120px;
+
+        .segmented {
+            display: flex;
+            justify-content: center;
+        }
+
+        .body {
+            .right {
+                justify-content: center;
             }
         }
     }
@@ -89,10 +390,12 @@ $button-text-color: #ffffff;
                     flex-direction: column !important;
                     width: 100%;
                     align-items: baseline;
+
                     .cardFooter {
                         width: 100%;
                         display: flex;
                         justify-content: space-between;
+
                         button {
                             width: 100%;
                         }
