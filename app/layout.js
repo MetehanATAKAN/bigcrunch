@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { Inter } from "next/font/google";
-import '@/styles/reset.scss';
+import '@/public/fonts/fonts.scss';
+import '@/styles/global.scss';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import {config} from '@fortawesome/fontawesome-svg-core';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
@@ -16,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body >
         <Header />
         <main>
           <AntdRegistry>

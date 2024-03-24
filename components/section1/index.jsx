@@ -5,7 +5,6 @@ import  SpaceCompact from 'antd/lib/space/Compact';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faGift } from '@fortawesome/free-solid-svg-icons';
-import { Avatar, AvatarGroup } from '@mantine/core';
 import CarouselSection from './carousel';
 import Statistics from './statistics';
 

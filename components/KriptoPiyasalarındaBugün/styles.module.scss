@@ -132,3 +132,11 @@ $text-3-color: #70798c;
         }
     }
 }
+@media screen and (max-width: 768px) {
+    .kriptoPiyasa {
+        .header {
+            flex-direction: column;
+            align-items: baseline;
+        }
+    }
+}

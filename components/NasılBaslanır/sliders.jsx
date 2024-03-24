@@ -20,6 +20,7 @@ const Sliders = () => {
                     defaultValue='Startup'
                     color='red'
                     style={{backgroundColor:'#3c4150',color:'white'}}
+                   
                 />
             </div>
 
