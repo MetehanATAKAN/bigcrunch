@@ -1,0 +1,104 @@
+$border-color :#eef1fa;
+$text-3-color: #70798c;
+$brand-1-color : #2354e6;
+$button-text-color: #ffffff;
+
+.nasılBaslanır {
+    .all_cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        .main_card {
+            border: 1px solid $border-color;
+            border-radius: 8px;
+
+            .card {
+                
+    height: 100%;
+    padding: 24px 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+                .card_info {
+                    .cardHeader {
+                        margin-right: 24px;
+                    }
+
+                    .cardBody {
+                        h3 {
+                            font-size: 24px;
+                            font-weight: 600;
+                        }
+
+                        p {
+                            color: $text-3-color;
+                            font-size: 14px;
+                            margin-top: 8px;
+                        }
+                    }
+                }
+
+                .cardFooter {
+                    button {
+                        background-color: $brand-1-color;
+                        font-weight: 600;
+                        color: $button-text-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nasılBaslanır {
+        h2 {
+            font-size: 24px;
+        }
+        .all_cards {
+            grid-template-columns: repeat(1, 1fr);
+
+            .card {
+                flex-direction: row !important;
+                align-items: center;
+                justify-content: space-between;
+
+                .card_info {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nasılBaslanır {
+        .all_cards {
+            grid-template-columns: repeat(1, 1fr);
+
+            .main_card {
+                display: flex;
+                flex-direction: column !important;
+                align-items: baseline;
+
+                .card {
+                    flex-direction: column !important;
+                    width: 100%;
+                    align-items: baseline;
+                    .cardFooter {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        button {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

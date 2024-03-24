@@ -1,0 +1,185 @@
+$link-color: #ffffff;
+$text-2-color: #2e384d;
+$neutral-color-3: #ebedf2;
+$border-radius-sm: 4px;
+$border-color: #eef1fa;
+$card-bg: #f8f9fb;
+$text-1-color:#262933;
+
+.kriptoAlımSatım {
+    .header {
+        margin-top: 80px;
+        margin-bottom: 24px;
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        gap: 0px;
+        h2 {
+            margin: 0;
+        }
+
+        .header_button {
+           button {
+            border: 1px solid transparent;
+            border-radius: $border-radius-sm;
+            background-color: $neutral-color-3;
+            font-weight: 600;
+            font-size: 14px;
+           }
+        }
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+
+        .body_image {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .body_right {
+            width: 100%;
+            margin-top: 36px;
+            display: flex;
+            flex-direction: column;
+
+            .qr {
+                display: flex;
+                flex-direction: row;
+                -webkit-box-align: center;
+                align-items: center;
+                border: 1px solid $border-color;
+                background-color: $card-bg;
+                border-radius: 8px;
+                padding: 6px;
+                box-sizing: border-box;
+
+                .qr_text {
+                    margin-left: 24px;
+                    margin-right: 0px;
+                    font-weight: 600;
+
+                    .text1 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-bottom: 12px;
+                    }
+
+                    .text2 {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .tech {
+                display: grid;
+                grid-template-columns: repeat(3, 104px);
+                row-gap: 16px;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                margin-top: 32px;
+                box-sizing: border-box;
+
+                .tech_link {
+                    text-decoration: none;
+                    outline: none;
+                    -webkit-tap-highlight-color: transparent;
+                    width: 104px;
+                    height: 88px;
+                    display: flex;
+                    flex-direction: column;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    border-radius: 8px;
+                    color: $text-1-color;
+                    background-color: $link-color;
+                    cursor: pointer;
+                    font-size: 14px;
+                    svg {
+                        font-size: 32px;
+                    }
+                    span {
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .kriptoAlımSatım {
+        .header {
+            flex-direction: row;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+        }
+
+        .body {
+            .body_image {
+                width: 474px;
+            }
+
+            .body_right {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .kriptoAlımSatım {
+        .header {
+            margin-bottom: 32px;
+            margin-top: 120px;
+        }
+
+        .body {
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+
+            .body_right {
+                width: 462px;
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .kriptoAlımSatım {
+        .header {
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1248px) {
+    .kriptoAlımSatım {
+        .body {
+            .body_image {
+                width: 650px;
+            }
+        }
+    }
+}

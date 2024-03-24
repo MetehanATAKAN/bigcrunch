@@ -1,0 +1,134 @@
+$neutral-color-3: #ebedf2;
+$border-radius-sm: 4px;
+$border-color: #eef1fa;
+$text-3-color: #70798c;
+
+.kriptoPiyasa {
+    .header {
+        margin-top: 80px;
+        margin-bottom: 24px;
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        gap: 0px;
+
+        h2 {
+            margin: 0;
+        }
+
+        .header_right {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+
+            .buttons {
+                display: flex;
+                column-gap: 12px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+
+        .header_button {
+            button {
+                border: 1px solid transparent;
+                border-radius: $border-radius-sm;
+                background-color: $neutral-color-3;
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .body {
+        min-height: 582px;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: stretch;
+        align-items: stretch;
+
+        .table1 , .table2 {
+            height: calc(100% - 50px);
+            background: #ffffff;
+            border: 1px solid $border-color;
+            border-radius: 8px;
+            padding: 24px 0px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+
+            .table {
+                .coin {
+                    display: flex;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    overflow: hidden;
+
+                    .coin_image {
+                        margin-right: 4px;
+                    }
+
+                    .coin_info {
+                        line-height: inherit;
+                        .coin_name {
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+            .segmented {
+                padding: 0 24px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .kriptoPiyasa {
+        .header {
+            flex-direction: row;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+        }
+
+        .body {
+            column-gap: 8px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .kriptoPiyasa {
+        .header {
+            margin-bottom: 32px;
+            margin-top: 120px;
+        }
+
+        .body {
+            column-gap: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .kriptoPiyasa {
+        .header {
+            h2 {
+                font-size: 24px;
+            }
+        }
+        .body {
+            flex-direction: column;
+        }
+    }
+}

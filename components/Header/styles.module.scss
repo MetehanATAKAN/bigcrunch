@@ -1,0 +1,159 @@
+
+$brand-1-color : #2354e6;
+$link-color: #ffffff;
+
+.header {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 10px 24px;
+    box-sizing: border-box;
+    height: 64px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    transition: all 0.3s ease 0s;
+    background-color: rgb(12, 12, 15);
+
+    .header_left {
+        display: flex;
+        .header_menu_items {
+            display: flex;
+            align-items: center;
+            .header_menu_items_links {
+                a {
+                    color: $link-color;
+                    text-decoration: none;
+                    margin-right: 10px;
+                }
+            }
+            .header_swtich {
+                display: flex;
+                flex-shrink: 0;
+                -webkit-box-align: center;
+                align-items: center;
+        
+                .header_swtich_link {
+                    height: fit-content;
+                    margin-right: 6px;
+                    margin-left: 8px;
+                    display: flex;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    border: 1px solid $brand-1-color;
+                    border-radius: 2px;
+                    overflow: hidden;
+                    line-height: 12px;
+                    font-weight: 500;
+                    min-width: fit-content;
+        
+                    a {
+                        padding: 5px 12px;
+                        font-size: 12px;
+                        color: $link-color;
+                        text-decoration: none;
+                    }
+        
+                    .active_link {
+                        background-color: $brand-1-color;
+                    }
+                    .activeAlım {
+                        border-radius: 0px 4px 4px 0px;
+                    }
+                    .activeWeb3 {
+                        border-radius: 4px 0px 0px 4px;
+                    }
+                    .passive_link {
+                        background: #182253;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    } 
+    .heder_right {
+        color: $link-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            margin-left: 16px;
+        }
+      
+        .header_dropdown_icon {
+            svg {
+                font-size: 20px;
+            }
+        }
+        .auth {
+            display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    column-gap: 4px;
+    margin-right: 8px;
+    margin-left: unset;
+            .header_cüzdan_button {
+                button {
+                    background-color: $brand-1-color;
+                    border: none;
+                    color: $link-color;
+                    font-weight: 600;
+                }
+            }
+            .giriş {
+                margin-left: 0;
+                a {
+                    text-decoration: none;
+                    color: $link-color;
+                }
+            }
+        }
+        
+            .mobil_button {
+                display: block;
+                .button1 {
+                    display: flex;
+                    padding: 24px 0 12px 0;
+                }
+            }
+        
+    }
+}
+.menu_item_icon {
+    color: $brand-1-color !important;
+    font-size: large !important;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .header {
+        .header_left {
+            .header_menu_items {
+
+                .header_menu_items_links {
+                    display: none;
+                }
+    
+            }
+        } 
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    .header {
+        .header_left {
+            .header_menu_items {
+                .header_swtich {
+                    display: none;
+                }
+            }
+        } 
+        .heder_right{
+            .auth {
+                display: none;
+            }
+        }
+    }
+}

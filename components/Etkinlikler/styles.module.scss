@@ -1,0 +1,75 @@
+$link-color:#ffffff;
+$text-2-color:#2e384d;
+$neutral-color-3: #ebedf2;
+$border-radius-sm: 4px;
+
+.etkinlikler {
+    padding: 100px 0;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+            background-color: $neutral-color-3;
+            font-weight: 600;
+            border: none;
+            border-radius: $border-radius-sm;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+    }
+    .slideContainer {
+        position: relative;
+        text-align: -webkit-center !important;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0); /* Overlay rengi - Tamamen saydam */
+        display: none; /* Başlangıçta görünmez */
+      }
+      
+      .slideContainer:hover .overlay {
+        display: block; /* Slaytın üzerine gelindiğinde overlay görünür */
+      }
+      
+      .slideContainer .slideContent {
+        position: relative; /* Göreceli konumlandırma */
+      }
+      
+      .slideContainer:hover .slideContent p {
+        position: absolute;
+        bottom: 0; 
+        left: 0;
+        width: 100%; 
+        font-size: 14px;
+        font-weight: 500;
+        background-color: transparent; 
+        border: 1px solid transparent;
+        color: $text-2-color; 
+        padding: 10px; 
+        margin: 0;
+        pointer-events: none; 
+        transition: transform 0.5s ease; 
+        transform: translateY(100%); 
+      }
+      
+}
+@media screen and (max-width: 992px) {
+  .etkinlikler {
+     .header {
+      h2 {
+        font-size: 24px;
+    }
+     }
+  }
+}
