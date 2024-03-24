@@ -519,12 +519,7 @@ const Footer = () => {
 			<div className='options-logos-desktop'>
 				<div className='options-class-desktop'>
 					<div className='option-wrapper'>
-						<select id="cars">
-							<option value="volvo">Volvo</option>
-							<option value="saab">Saab</option>
-							<option value="opel">Opel</option>
-							<option value="audi">Audi</option>
-						</select>
+						
 					</div>
 					<div className='social-media-icons'>
                     <FontAwesomeIcon width={24} height={24} icon={faEnvelope} />
