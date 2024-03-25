@@ -56,6 +56,7 @@ const KriptoYasamTarzi = () => {
                             src="https://gimg2.gateimg.com/crypto-life/169138779046827155post_light.mp4"
                             muted
                             loop
+                            preload='none'
                             playsInline
                         />
                     </div>
@@ -86,6 +87,7 @@ const KriptoYasamTarzi = () => {
                             src="https://gimg2.gateimg.com/crypto-life/169138779018467413live_light.mp4"
                             muted
                             loop
+                            preload='none'
                             playsInline
                         />
 
@@ -118,6 +120,7 @@ const KriptoYasamTarzi = () => {
                             src="https://gimg2.gateimg.com/crypto-life/1691387790128970705chat_light.mp4"
                             muted
                             loop
+                            preload='none'
                             playsInline
                         />
 
