@@ -56,7 +56,6 @@ const CarouselSection = () => {
     ]
 
     const handleSlide = (type) => {
-        console.log(currentSlide);
         if(type === 'up') {
             setCurrentSlide(prev => prev -1);
             carouselRef.current.goTo(currentSlide-1);

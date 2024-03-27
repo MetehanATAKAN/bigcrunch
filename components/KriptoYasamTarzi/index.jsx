@@ -16,7 +16,6 @@ const KriptoYasamTarzi = () => {
     const [isPlaying, setIsPlaying] = useState(false);
 
     const handleMouseEnter = (id) => {
-        console.log(id);
         if (!isPlaying) {
             setIsPlaying(true);
             if(id === 1) videoRef.current.play();
@@ -34,9 +33,7 @@ const KriptoYasamTarzi = () => {
         }
     };
 
-    const handleVideoLoaded = () => {
-        console.log('burdaa');
-      };
+  
     return (
         <div className={style.kriptoYasam}>
             <div>
